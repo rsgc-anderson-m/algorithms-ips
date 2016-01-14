@@ -18,6 +18,11 @@ class Sketch {
     var x = 0
     var s = 1
     var newRandomValue = arc4random_uniform(5)
+    var rect1Height = 0
+    var rect2Height = 0
+    var rect3Height = 0
+    var rect4Height = 0
+    
     // This runs once, equivalent to setup() in Processing
     init() {
         
@@ -43,7 +48,11 @@ class Sketch {
         
         print("the value of x is \(newRandomValue)")
         
-
+        
+        
+        
+        
+        
     }
     
 }
