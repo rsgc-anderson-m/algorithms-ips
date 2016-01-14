@@ -50,26 +50,26 @@ class Sketch {
         // Draw rect1
         canvas.drawShapesWithBorders = false
         canvas.fillColor = Color(hue: 207, saturation: 88, brightness: 0, alpha: 100)
-        canvas.drawRectangle(bottomRightX: 200, bottomRightY: 0, width: rectwidth, height: rect1Height)
+        canvas.drawRectangle(bottomRightX: 200, bottomRightY: 10, width: rectwidth, height: rect1Height)
 
         // Draw rect2
         canvas.drawShapesWithBorders = false
         canvas.fillColor = Color(hue: 207, saturation: 88, brightness: 0, alpha: 100)
-        canvas.drawRectangle(bottomRightX: 400, bottomRightY: 0, width: rectwidth, height: rect2Height)
+        canvas.drawRectangle(bottomRightX: 400, bottomRightY: 10, width: rectwidth, height: rect2Height)
         
         // Draw rect3
         canvas.drawShapesWithBorders = false
         canvas.fillColor = Color(hue: 207, saturation: 88, brightness: 0, alpha: 100)
-        canvas.drawRectangle(bottomRightX: 600, bottomRightY: 0, width: rectwidth, height: rect3Height)
+        canvas.drawRectangle(bottomRightX: 600, bottomRightY: 10, width: rectwidth, height: rect3Height)
 
         // Draw rect4
         canvas.drawShapesWithBorders = false
         canvas.fillColor = Color(hue: 207, saturation: 88, brightness: 0, alpha: 100)
-        canvas.drawRectangle(bottomRightX: 800, bottomRightY: 0, width: rectwidth, height: rect4Height)
+        canvas.drawRectangle(bottomRightX: 800, bottomRightY: 10, width: rectwidth, height: rect4Height)
 
         canvas.drawLine(fromX: 150, fromY: 10, toX: 150, toY: 600, lineWidth: 3)
         
-        canvas.drawLine(fromX: 10, fromY: 10, toX: 1000, toY: 10, lineWidth: 3)
+        canvas.drawLine(fromX: 149, fromY: 10, toX: 1000, toY: 10, lineWidth: 3)
         
         print("the value of x is \(newRandomValue)")
         
@@ -86,6 +86,10 @@ class Sketch {
             rect4Height = rect4Height + 1
         }
         
+
+        canvas.textColor = Color(hue: 0, saturation: 0, brightness: 0, alpha: 100)
+        canvas.drawText(message: "1 =", size: 10, x: 2, y: 500)
+        canvas.drawText(message: String(rect1Height), size: 10, x: 20, y: 500)
     }
     
 }
