@@ -22,13 +22,13 @@ class Sketch {
     var rect2Height = 0
     var rect3Height = 0
     var rect4Height = 0
-    
+    var rectwidth = 50
     
     // This runs once, equivalent to setup() in Processing
     init() {
         
         // Create canvas object – specify size
-        canvas = Canvas(width: 800, height: 400)
+        canvas = Canvas(width: 1000, height: 600)
         
         // The frame rate can be adjusted; the default is 60 fps
         canvas.framesPerSecond = 60
@@ -50,22 +50,22 @@ class Sketch {
         // Draw rect1
         canvas.drawShapesWithBorders = false
         canvas.fillColor = Color(hue: 207, saturation: 88, brightness: 0, alpha: 100)
-        canvas.drawRectangle(bottomRightX: 0, bottomRightY: 0, width: canvas.width, height: canvas.height)
+        canvas.drawRectangle(bottomRightX: 200, bottomRightY: 0, width: rectwidth, height: rect1Height)
 
         // Draw rect2
         canvas.drawShapesWithBorders = false
         canvas.fillColor = Color(hue: 207, saturation: 88, brightness: 0, alpha: 100)
-        canvas.drawRectangle(bottomRightX: 0, bottomRightY: 0, width: canvas.width, height: canvas.height)
+        canvas.drawRectangle(bottomRightX: 400, bottomRightY: 0, width: rectwidth, height: rect2Height)
         
         // Draw rect3
         canvas.drawShapesWithBorders = false
         canvas.fillColor = Color(hue: 207, saturation: 88, brightness: 0, alpha: 100)
-        canvas.drawRectangle(bottomRightX: 0, bottomRightY: 0, width: canvas.width, height: canvas.height)
+        canvas.drawRectangle(bottomRightX: 600, bottomRightY: 0, width: rectwidth, height: rect3Height)
 
         // Draw rect4
         canvas.drawShapesWithBorders = false
         canvas.fillColor = Color(hue: 207, saturation: 88, brightness: 0, alpha: 100)
-        canvas.drawRectangle(bottomRightX: 0, bottomRightY: 0, width: canvas.width, height: canvas.height)
+        canvas.drawRectangle(bottomRightX: 800, bottomRightY: 0, width: rectwidth, height: rect4Height)
 
         
         
