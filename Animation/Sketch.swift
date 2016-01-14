@@ -23,6 +23,7 @@ class Sketch {
     var rect3Height = 0
     var rect4Height = 0
     
+    
     // This runs once, equivalent to setup() in Processing
     init() {
         
@@ -38,13 +39,35 @@ class Sketch {
     func draw() {
         
         // Generate random value between 1 and 4
-        newRandomValue = arc4random_uniform(5)
+        newRandomValue = arc4random_uniform(4)+1
 
         
         // Clear the background
         canvas.drawShapesWithBorders = false
         canvas.fillColor = Color(hue: 0, saturation: 0, brightness: 100, alpha: 100)
         canvas.drawRectangle(bottomRightX: 0, bottomRightY: 0, width: canvas.width, height: canvas.height)
+        
+        // Draw rect1
+        canvas.drawShapesWithBorders = false
+        canvas.fillColor = Color(hue: 207, saturation: 88, brightness: 0, alpha: 100)
+        canvas.drawRectangle(bottomRightX: 0, bottomRightY: 0, width: canvas.width, height: canvas.height)
+
+        // Draw rect2
+        canvas.drawShapesWithBorders = false
+        canvas.fillColor = Color(hue: 207, saturation: 88, brightness: 0, alpha: 100)
+        canvas.drawRectangle(bottomRightX: 0, bottomRightY: 0, width: canvas.width, height: canvas.height)
+        
+        // Draw rect3
+        canvas.drawShapesWithBorders = false
+        canvas.fillColor = Color(hue: 207, saturation: 88, brightness: 0, alpha: 100)
+        canvas.drawRectangle(bottomRightX: 0, bottomRightY: 0, width: canvas.width, height: canvas.height)
+
+        // Draw rect4
+        canvas.drawShapesWithBorders = false
+        canvas.fillColor = Color(hue: 207, saturation: 88, brightness: 0, alpha: 100)
+        canvas.drawRectangle(bottomRightX: 0, bottomRightY: 0, width: canvas.width, height: canvas.height)
+
+        
         
         print("the value of x is \(newRandomValue)")
         
