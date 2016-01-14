@@ -67,7 +67,9 @@ class Sketch {
         canvas.fillColor = Color(hue: 207, saturation: 88, brightness: 0, alpha: 100)
         canvas.drawRectangle(bottomRightX: 800, bottomRightY: 0, width: rectwidth, height: rect4Height)
 
-        canvas.drawLine(fromX: 150, fromY: 0, toX: 150, toY: 600, lineWidth: 3)
+        canvas.drawLine(fromX: 150, fromY: 10, toX: 150, toY: 600, lineWidth: 3)
+        
+        canvas.drawLine(fromX: 10, fromY: 10, toX: 1000, toY: 10, lineWidth: 3)
         
         print("the value of x is \(newRandomValue)")
         
