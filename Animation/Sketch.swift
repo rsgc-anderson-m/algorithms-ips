@@ -48,10 +48,18 @@ class Sketch {
         
         print("the value of x is \(newRandomValue)")
         
-        
-        
-        
-        
+        if (newRandomValue == 1){
+            rect1Height = rect1Height + 1
+        }
+        if (newRandomValue == 2){
+            rect2Height = rect2Height + 1
+        }
+        if (newRandomValue == 3){
+            rect3Height = rect3Height + 1
+        }
+        if (newRandomValue == 4){
+            rect4Height = rect4Height + 1
+        }
         
     }
     
