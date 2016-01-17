@@ -23,7 +23,7 @@ class Sketch {
     var rect3Height = 0
     var rect4Height = 0
     var rectwidth = 50
-    
+    var i = 0
     // This runs once, equivalent to setup() in Processing
     init() {
         
@@ -39,8 +39,6 @@ class Sketch {
     func draw() {
         
         // Generate random value between 1 and 4
-        newRandomValue = arc4random_uniform(4)+1
-
         
         // Clear the background
         canvas.drawShapesWithBorders = false
@@ -73,23 +71,48 @@ class Sketch {
         
         print("the value of x is \(newRandomValue)")
         
-        if (newRandomValue == 1){
-            rect1Height = rect1Height + 1
+        
+        if(i < 800){
+            newRandomValue = arc4random_uniform(4)+1
+            
+            
+            if (newRandomValue == 1){
+                rect1Height = rect1Height + 1
+                i = i+1
+            }
+            if (newRandomValue == 2){
+                rect2Height = rect2Height + 1
+                i = i+1
+            }
+            if (newRandomValue == 3){
+                rect3Height = rect3Height + 1
+                i = i+1
+            }
+            if (newRandomValue == 4){
+                rect4Height = rect4Height + 1
+                i = i+1
+            }
+            
         }
-        if (newRandomValue == 2){
-            rect2Height = rect2Height + 1
-        }
-        if (newRandomValue == 3){
-            rect3Height = rect3Height + 1
-        }
-        if (newRandomValue == 4){
-            rect4Height = rect4Height + 1
-        }
+        
         
 
         canvas.textColor = Color(hue: 0, saturation: 0, brightness: 0, alpha: 100)
         canvas.drawText(message: "1 =", size: 10, x: 2, y: 500)
         canvas.drawText(message: String(rect1Height), size: 10, x: 20, y: 500)
+        
+        canvas.textColor = Color(hue: 0, saturation: 0, brightness: 0, alpha: 100)
+        canvas.drawText(message: "2 =", size: 10, x: 2, y: 475)
+        canvas.drawText(message: String(rect2Height), size: 10, x: 20, y: 475)
+        
+        canvas.textColor = Color(hue: 0, saturation: 0, brightness: 0, alpha: 100)
+        canvas.drawText(message: "3 =", size: 10, x: 2, y: 450)
+        canvas.drawText(message: String(rect3Height), size: 10, x: 20, y: 450)
+        
+        canvas.textColor = Color(hue: 0, saturation: 0, brightness: 0, alpha: 100)
+        canvas.drawText(message: "4 =", size: 10, x: 2, y: 425)
+        canvas.drawText(message: String(rect4Height), size: 10, x: 20, y: 425)
+        
     }
     
 }
