@@ -65,14 +65,23 @@ class Sketch {
         canvas.fillColor = Color(hue: 207, saturation: 88, brightness: 0, alpha: 100)
         canvas.drawRectangle(bottomRightX: 800, bottomRightY: 10, width: rectwidth, height: rect4Height)
 
-        canvas.drawLine(fromX: 150, fromY: 10, toX: 150, toY: 600, lineWidth: 3)
+        canvas.drawLine(fromX: 150, fromY: 10, toX: 150, toY: 570, lineWidth: 3)
         
-        canvas.drawLine(fromX: 149, fromY: 10, toX: 1000, toY: 10, lineWidth: 3)
+        canvas.drawLine(fromX: 149, fromY: 10, toX: 970, toY: 10, lineWidth: 3)
+        
+        
+        canvas.drawLine(fromX: 10, fromY: 414, toX: 10, toY: 526, lineWidth: 3)
+        
+        canvas.drawLine(fromX: 100, fromY: 414, toX: 100, toY: 526, lineWidth: 3)
+        
+        canvas.drawLine(fromX: 10, fromY: 525, toX: 100, toY: 525, lineWidth: 3)
+        
+        canvas.drawLine(fromX: 10, fromY: 415, toX: 100, toY: 415, lineWidth: 3)
         
         print("the value of x is \(newRandomValue)")
         
         
-        if(i < 800){
+        if(i < 1600){
             newRandomValue = arc4random_uniform(4)+1
             
             
@@ -98,20 +107,20 @@ class Sketch {
         
 
         canvas.textColor = Color(hue: 0, saturation: 0, brightness: 0, alpha: 100)
-        canvas.drawText(message: "1 =", size: 10, x: 2, y: 500)
-        canvas.drawText(message: String(rect1Height), size: 10, x: 20, y: 500)
+        canvas.drawText(message: "1 =", size: 15, x: 35, y: 500)
+        canvas.drawText(message: String(rect1Height), size: 15, x: 62, y: 500)
         
         canvas.textColor = Color(hue: 0, saturation: 0, brightness: 0, alpha: 100)
-        canvas.drawText(message: "2 =", size: 10, x: 2, y: 475)
-        canvas.drawText(message: String(rect2Height), size: 10, x: 20, y: 475)
+        canvas.drawText(message: "2 =", size: 15, x: 35, y: 475)
+        canvas.drawText(message: String(rect2Height), size: 15, x: 62, y: 475)
         
         canvas.textColor = Color(hue: 0, saturation: 0, brightness: 0, alpha: 100)
-        canvas.drawText(message: "3 =", size: 10, x: 2, y: 450)
-        canvas.drawText(message: String(rect3Height), size: 10, x: 20, y: 450)
+        canvas.drawText(message: "3 =", size: 15, x: 35, y: 450)
+        canvas.drawText(message: String(rect3Height), size: 15, x: 62, y: 450)
         
         canvas.textColor = Color(hue: 0, saturation: 0, brightness: 0, alpha: 100)
-        canvas.drawText(message: "4 =", size: 10, x: 2, y: 425)
-        canvas.drawText(message: String(rect4Height), size: 10, x: 20, y: 425)
+        canvas.drawText(message: "4 =", size: 15, x: 35, y: 425)
+        canvas.drawText(message: String(rect4Height), size: 15, x: 62, y: 425)
         
     }
     
