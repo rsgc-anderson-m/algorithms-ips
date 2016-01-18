@@ -38,8 +38,6 @@ class Sketch {
     // Runs repeatedly, equivalent to draw() in Processing
     func draw() {
         
-        // Generate random value between 1 and 4
-        
         // Clear the background
         canvas.drawShapesWithBorders = false
         canvas.fillColor = Color(hue: 0, saturation: 0, brightness: 100, alpha: 100)
@@ -84,7 +82,7 @@ class Sketch {
         if(i < 1600){
             newRandomValue = arc4random_uniform(4)+1
             
-            // if the a value is chosen add 1 to the height of the corisponding rectangle
+            // when a value is chosen add 1 to the height of the corisponding rectangle
             if (newRandomValue == 1){
                 rect1Height = rect1Height + 1
                 i = i+1
