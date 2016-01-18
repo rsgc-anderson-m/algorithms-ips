@@ -122,6 +122,41 @@ class Sketch {
         canvas.drawText(message: "4 =", size: 15, x: 35, y: 425)
         canvas.drawText(message: String(rect4Height), size: 15, x: 62, y: 425)
         
+        canvas.textColor = Color(hue: 0, saturation: 0, brightness: 0, alpha: 100)
+        canvas.drawText(message: "y", size: 15, x: 147, y: 575)
+        
+        canvas.textColor = Color(hue: 0, saturation: 0, brightness: 0, alpha: 100)
+        canvas.drawText(message: "x", size: 15, x: 975, y: 3)
+        
+        canvas.textColor = Color(hue: 0, saturation: 0, brightness: 0, alpha: 100)
+        canvas.drawText(message: "50", size: 15, x: 125, y: 60)
+        
+        canvas.textColor = Color(hue: 0, saturation: 0, brightness: 0, alpha: 100)
+        canvas.drawText(message: "100", size: 15, x: 120, y: 110)
+        
+        canvas.textColor = Color(hue: 0, saturation: 0, brightness: 0, alpha: 100)
+        canvas.drawText(message: "150", size: 15, x: 120, y: 160)
+        
+        canvas.textColor = Color(hue: 0, saturation: 0, brightness: 0, alpha: 100)
+        canvas.drawText(message: "200", size: 15, x: 120, y: 210)
+        
+        canvas.textColor = Color(hue: 0, saturation: 0, brightness: 0, alpha: 100)
+        canvas.drawText(message: "250", size: 15, x: 120, y: 260)
+        
+        canvas.textColor = Color(hue: 0, saturation: 0, brightness: 0, alpha: 100)
+        canvas.drawText(message: "300", size: 15, x: 120, y: 310)
+        
+        canvas.textColor = Color(hue: 0, saturation: 0, brightness: 0, alpha: 100)
+        canvas.drawText(message: "350", size: 15, x: 120, y: 360)
+        
+        canvas.textColor = Color(hue: 0, saturation: 0, brightness: 0, alpha: 100)
+        canvas.drawText(message: "400", size: 15, x: 120, y: 410)
+        
+        canvas.textColor = Color(hue: 0, saturation: 0, brightness: 0, alpha: 100)
+        canvas.drawText(message: "450", size: 15, x: 120, y: 460)
+        
+        canvas.textColor = Color(hue: 0, saturation: 0, brightness: 0, alpha: 100)
+        canvas.drawText(message: "500", size: 15, x: 120, y: 510)
     }
     
 }
