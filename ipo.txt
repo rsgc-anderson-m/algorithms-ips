@@ -1,0 +1,23 @@
+For my ISP with the guidance of Mr. Gordon I have decided to created a random number graph. The purpose of my ISP is mainly directed at my data management class because we frequently need the use of a random number generator. Once my code randomly picks a number between 1 and 4 the corresponding rectangle on the bar graph will add 1 to its height. The code will continuously loop until 1600 numbers are chosen. On the screen the amount each number is chosen will be recored in the legend. The graph also includes a scale and their respective x and y axis.
+
+Here is my algorithm:
+
+-var rect1Height = 0
+-var rect2Height = 0
+-var rect3Height = 0
+-var rect4Height = 0
+
+-loop
+    -pick a number (1-4)
+       -add 1 to rect1Height
+    -else if 2 then
+       -add 1 to rect2Height
+    -else if 3 then
+       -add 1 to rect3Height
+    -else if 4 then
+       -add 1 to rect4Height
+
+-draw rect1
+-draw rect2
+-draw rect3
+-draw rect4
