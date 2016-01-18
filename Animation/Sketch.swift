@@ -122,11 +122,13 @@ class Sketch {
         canvas.drawText(message: "4 =", size: 15, x: 35, y: 425)
         canvas.drawText(message: String(rect4Height), size: 15, x: 62, y: 425)
         
+        
         canvas.textColor = Color(hue: 0, saturation: 0, brightness: 0, alpha: 100)
         canvas.drawText(message: "y", size: 15, x: 147, y: 575)
         
         canvas.textColor = Color(hue: 0, saturation: 0, brightness: 0, alpha: 100)
         canvas.drawText(message: "x", size: 15, x: 975, y: 3)
+        
         
         canvas.textColor = Color(hue: 0, saturation: 0, brightness: 0, alpha: 100)
         canvas.drawText(message: "50", size: 15, x: 125, y: 60)
@@ -157,6 +159,22 @@ class Sketch {
         
         canvas.textColor = Color(hue: 0, saturation: 0, brightness: 0, alpha: 100)
         canvas.drawText(message: "500", size: 15, x: 120, y: 510)
+        
+        
+        canvas.textColor = Color(hue: 0, saturation: 0, brightness: 0, alpha: 100)
+        canvas.drawText(message: "1", size: 15, x: 185, y: 15)
+        
+        canvas.textColor = Color(hue: 0, saturation: 0, brightness: 0, alpha: 100)
+        canvas.drawText(message: "2", size: 15, x: 385, y: 15)
+        
+        canvas.textColor = Color(hue: 0, saturation: 0, brightness: 0, alpha: 100)
+        canvas.drawText(message: "3", size: 15, x: 585, y: 15)
+        
+        canvas.textColor = Color(hue: 0, saturation: 0, brightness: 0, alpha: 100)
+        canvas.drawText(message: "4", size: 15, x: 785, y: 15)
+        
+        canvas.textColor = Color(hue: 0, saturation: 0, brightness: 0, alpha: 100)
+        canvas.drawText(message: "Random Number Graph", size: 20, x: 460, y: 550)
     }
     
 }
